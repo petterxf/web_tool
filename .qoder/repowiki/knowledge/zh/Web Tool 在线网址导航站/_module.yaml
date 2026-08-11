@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: ""
+title: Web Tool 在线网址导航站
+scope:
+    - README.md
+    - Readme-en.md
+    - .gitignore
+    - web_tool-master.zip
+source_files: []
+depends_on: []
+related_to: []

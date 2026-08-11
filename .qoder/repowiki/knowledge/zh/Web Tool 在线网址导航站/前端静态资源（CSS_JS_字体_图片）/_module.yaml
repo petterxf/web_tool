@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: assets
+title: 前端静态资源（CSS/JS/字体/图片）
+scope:
+    - assets/
+source_files: []
+depends_on: []
+related_to: []

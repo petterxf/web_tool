@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: pages
+title: 静态导航站点页面集
+scope:
+    - index.html
+    - about/
+    - 404.html
+    - commit.html
+source_files: []
+depends_on: []
+related_to: []

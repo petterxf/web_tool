@@ -1,0 +1,42 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+nodes_managed: true
+exported_at: "2026-08-09T11:09:37Z"
+modules:
+    "":
+        dir_name: Web Tool 在线网址导航站
+        title: Web Tool 在线网址导航站
+        scope:
+            - README.md
+            - Readme-en.md
+            - .gitignore
+            - web_tool-master.zip
+        source_files: []
+        children:
+            - assets
+            - pages
+        depends_on: []
+        related_to: []
+    assets:
+        dir_name: 前端静态资源（CSS_JS_字体_图片）
+        title: 前端静态资源（CSS/JS/字体/图片）
+        scope:
+            - assets/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    pages:
+        dir_name: 静态导航站点页面集
+        title: 静态导航站点页面集
+        scope:
+            - index.html
+            - about/
+            - 404.html
+            - commit.html
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
