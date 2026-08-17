@@ -7,9 +7,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#f9f9f9" />
-    <title>关于本站 - 在线工具网</title>
-    <link rel="shortcut icon" href="../assets/images/favicon.png?v=2" />
-    <meta name="keywords" content="在线工具网,网址导航,在线工具" />
+    <title>关于我们 - 在线工具网</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <meta name="keywords" content="在线工具网,关于我们" />
     <meta name="description" content="在线网址导航, 各类开发工具、绘图绘画工具、md5、在线ps、base64、房贷计算器等" />
 
     <link rel="stylesheet" id="block-library-css"
@@ -99,14 +99,14 @@
             margin-bottom: 0;
         }
 
-        .category-grid {
+        .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin-top: 20px;
         }
 
-        .category-item {
+        .skill-item {
             background: #f8f9fa;
             padding: 15px;
             border-radius: 6px;
@@ -114,21 +114,64 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .category-item:hover {
+        .skill-item:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .category-item i {
+        .skill-item i {
             font-size: 28px;
             color: #667eea;
             margin-bottom: 8px;
         }
 
-        .category-item .category-name {
+        .skill-item .skill-name {
             font-weight: 600;
             color: #333;
             font-size: 14px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+
+        .contact-list li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .contact-list li:hover {
+            background: #e9ecef;
+        }
+
+        .contact-list li i {
+            margin-right: 12px;
+            color: #667eea;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-list li strong {
+            color: #333;
+            margin-right: 8px;
+            min-width: 80px;
+        }
+
+        .contact-list li a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .contact-list li a:hover {
+            text-decoration: underline;
         }
 
         .back-home {
@@ -170,26 +213,6 @@
             line-height: 1.8;
         }
 
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0 0 0;
-        }
-
-        .feature-list li {
-            padding: 8px 0;
-            color: #555;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .feature-list li i {
-            color: #28a745;
-            margin-right: 10px;
-            margin-top: 4px;
-            flex-shrink: 0;
-        }
-
         @media (max-width: 768px) {
             .about-container {
                 margin: 20px;
@@ -207,7 +230,7 @@
                 padding: 30px 20px;
             }
 
-            .category-grid {
+            .skills-grid {
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
         }
@@ -221,109 +244,83 @@
 <body class="io-grey-mode">
     <div class="about-container">
         <div class="about-header">
-            <h1><i class="fas fa-globe"></i> 在线工具网</h1>
-            <p>精选优质网站，一站式资源导航平台</p>
+            <h1><i class="fas fa-user-circle"></i> 关于作者</h1>
+            <p>热爱技术，专注于软件开发与创新</p>
         </div>
 
         <div class="about-content">
             <div class="section">
                 <h2 class="section-title">
-                    <i class="fas fa-info-circle"></i>
-                    站点介绍
+                    <i class="fas fa-id-card"></i>
+                    个人简介
                 </h2>
                 <div class="section-content">
                     <div class="highlight-box">
-                        <p>在线工具网是一个精心 curated 的网址导航站点，致力于收集和整理互联网上各类实用工具与优质资源，帮助用户快速找到所需的网站和服务，提升工作与学习效率。</p>
+                        <p>大家好，我叫Tom，来自于北京，专业是计算机技术。在过去的5年中，我一直在某大型互联网公司担任软件工程师，专注于Java/Python/Javascript的开发和研究。</p>
                     </div>
-                    <p>我们深知在日常工作和学习中，经常需要使用各种在线工具，但往往苦于不知道去哪里寻找。本站将各类常用工具按类别整理归纳，涵盖开发工具、设计资源、办公学习、影音视频、生活实用等多个领域，让您不再为找不到合适的工具而烦恼。</p>
-                    <p>每一个收录的网站都经过精心筛选，确保其质量与实用性。无论您是开发者、设计师、学生还是普通用户，都能在这里找到适合自己的工具与资源。</p>
+                    <p>在大学期间，我就开始对编程产生浓厚的兴趣，通过自学和实践，我掌握了各种编程语言和开发工具。在工作的期间，我主要负责开发和维护公司的后端系统，涉及到的主要技术栈是Java和Spring Boot。在这个过程中，我积累了丰富的经验，能够熟练地使用Java进行后端开发，并且能够快速地解决开发过程中遇到的各种问题。</p>
+                    <p>除了Java和Spring Boot，我还熟悉Python、C++等其他编程语言，并且能够使用JavaScript进行前端开发。此外，我还熟悉数据库的操作，能够熟练使用MySQL、Oracle等数据库管理系统。</p>
                 </div>
             </div>
 
             <div class="section">
                 <h2 class="section-title">
-                    <i class="fas fa-th-large"></i>
-                    收录分类
+                    <i class="fas fa-code"></i>
+                    技术栈
                 </h2>
-                <div class="section-content">
-                    <p>本站收录了多个类别的优质网站，涵盖工作、学习、生活各方面：</p>
-                    <div class="category-grid">
-                        <div class="category-item">
-                            <i class="fas fa-code"></i>
-                            <div class="category-name">开发工具</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-paint-brush"></i>
-                            <div class="category-name">设计资源</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div class="category-name">办公学习</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-film"></i>
-                            <div class="category-name">影音视频</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-gamepad"></i>
-                            <div class="category-name">游戏竞技</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-calculator"></i>
-                            <div class="category-name">生活实用</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div class="category-name">教育学术</div>
-                        </div>
-                        <div class="category-item">
-                            <i class="fas fa-ellipsis-h"></i>
-                            <div class="category-name">更多分类</div>
-                        </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <div class="skill-name">Java / Spring Boot</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <div class="skill-name">MySQL / Oracle</div>
                     </div>
                 </div>
             </div>
 
             <div class="section">
                 <h2 class="section-title">
-                    <i class="fas fa-star"></i>
-                    站点特色
+                    <i class="fas fa-heart"></i>
+                    工作理念
                 </h2>
                 <div class="section-content">
-                    <ul class="feature-list">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span><strong>精选收录</strong> — 每个网站经过精心筛选，确保质量与实用性，拒绝低质内容</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span><strong>分类清晰</strong> — 按用途细致分类，快速定位所需工具，节省寻找时间</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span><strong>持续更新</strong> — 定期收录新的优质网站，淘汰失效链接，保持内容新鲜</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span><strong>简洁无广告</strong> — 页面简洁清爽，专注导航本身，不干扰用户体验</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <span><strong>多端适配</strong> — 支持电脑、平板、手机等多种设备，随时随地访问</span>
-                        </li>
-                    </ul>
+                    <p>在工作中，我注重团队协作，能够与团队成员保持良好的沟通和合作。同时，我还注重代码的可读性和可维护性，能够编写高质量的代码。我对于新技术的学习充满热情，并且能够将所学技术应用到实际工作中。</p>
+                    <p>除了工作和学习，我还积极参加各种技术社区和活动，通过与他人的交流和学习，不断提升自己的技术水平和解决问题的能力。</p>
                 </div>
             </div>
 
             <div class="section">
                 <h2 class="section-title">
-                    <i class="fas fa-lightbulb"></i>
-                    使用建议
+                    <i class="fas fa-address-book"></i>
+                    联系方式
                 </h2>
-                <div class="section-content">
-                    <p>您可以将本站加入收藏夹，方便日后快速访问。也可以通过页面顶部的搜索功能，输入关键词快速查找所需网站。</p>
-                    <p>如果您发现某个链接失效或有更好的网站推荐，欢迎通过页面底部的联系方式反馈给我们，我们会及时处理。</p>
-                </div>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/geeeeeeeek" target="_blank">https://github.com/geeeeeeeek</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <strong>个人主页:</strong>
+                        <a href="https://web.gitapp.cn" target="_blank">https://web.gitapp.cn</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <strong>邮箱:</strong>
+                        <a href="mailto:kefu308@gmail.com">kefu308@gmail.com</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
